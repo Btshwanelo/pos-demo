@@ -17,7 +17,7 @@ export default function AdminPanel() {
 
   const tabs = [
     { id: 'sales', name: 'Billing Queue', icon: '📊' },
-    { id: 'tables', name: 'Tables', icon: '🪑' },
+    // { id: 'tables', name: 'Tables', icon: '🪑' },
     { id: 'history', name: 'Order History', icon: '📋' },
     { id: 'reports', name: 'Report', icon: '📈' }
   ];
@@ -128,7 +128,7 @@ export default function AdminPanel() {
             {/* Tab Content */}
             <div className="bg-white rounded-2xl shadow-sm">
               {activeTab === 'sales' && <SalesHistory sales={state.sales} />}
-              {activeTab === 'tables' && <TablesManagement />}
+              {/* {activeTab === 'tables' && <TablesManagement />} */}
               {activeTab === 'history' && <OrderHistory sales={state.sales} />}
               {activeTab === 'reports' && <Reports sales={state.sales} products={state.products} />}
             </div>

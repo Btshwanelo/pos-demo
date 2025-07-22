@@ -8,7 +8,7 @@ export default function LoginScreen() {
   const { dispatch } = useApp();
   const navigate = useNavigate();
 
-  const correctPin = '123456'; // Demo PIN
+  const correctPin = '123'; // Demo PIN
 
   const handleNumberClick = (number) => {
     if (pin.length < 6) {
@@ -31,7 +31,7 @@ export default function LoginScreen() {
         dispatch({ type: 'LOGIN', payload: { email: 'admin@example.com', role: 'admin' } });
         navigate('/pos');
       } else {
-        alert('Invalid PIN. Use 123456');
+        alert('Invalid PIN. Use 123');
         setPin('');
       }
       setLoading(false);
@@ -122,7 +122,7 @@ export default function LoginScreen() {
           {/* PIN Display */}
           <div className="flex justify-center mb-8">
             <div className="flex space-x-4">
-              {[0, 1, 2, 3, 4, 5].map((index) => (
+              {[0, 1, 2].map((index) => (
                 <div
                   key={index}
                   className={`w-4 h-4 rounded-full border-2 ${
@@ -184,7 +184,7 @@ export default function LoginScreen() {
           {/* Demo Info */}
           <div className="mt-6 p-4 bg-blue-50 rounded-xl">
             <p className="text-sm text-blue-800 text-center">
-              <strong>Demo PIN:</strong> 123456
+              <strong>Demo PIN:</strong> 123
             </p>
           </div>
         </div>
