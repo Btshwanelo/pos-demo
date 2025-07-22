@@ -53,7 +53,7 @@ export default function Reports({ sales, products }) {
         </div>
         
         <button className="bg-blue-500 text-white px-4 py-2 rounded-xl hover:bg-blue-600 flex items-center space-x-2">
-          <span>📄</span>
+         
           <span>Export Report</span>
         </button>
       </div>

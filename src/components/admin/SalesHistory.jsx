@@ -133,12 +133,12 @@ export default function SalesHistory({ sales }) {
           </div>
         </div>
 
-        <div className="flex items-center space-x-2">
+        {/* <div className="flex items-center space-x-2">
           <button className="bg-green-500 text-white px-4 py-2 rounded-xl hover:bg-green-600">
             New Service Order
           </button>
           <button className="p-2 hover:bg-gray-100 rounded-lg">⋯</button>
-        </div>
+        </div> */}
       </div>
 
       {/* Service Orders List */}
@@ -175,7 +175,7 @@ export default function SalesHistory({ sales }) {
                   </div>
                 </div>
 
-                <div>
+                {/* <div>
                   <span className="text-sm text-gray-500 mb-2 block">Services Included:</span>
                   <div className="flex flex-wrap gap-2">
                     {sale.services.map((service, index) => (
@@ -184,39 +184,39 @@ export default function SalesHistory({ sales }) {
                       </span>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
               
               <div className="text-right ml-6">
                 <div className="flex items-center space-x-2 mb-4">
                   {sale.status === 'active' ? (
                     <div className="flex space-x-2">
-                      <button className="bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-600 transition-all">
+                      <button className="bg-blue-100 text-blue-700 px-1 py-1 rounded-xl text-sm font-medium hover:bg-green-600 transition-all">
                         Complete Service
                       </button>
-                      <button className="bg-yellow-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-yellow-600 transition-all">
+                      <button className="bg-yellow-100 text-yellow-700 px-1 py-1 rounded-lg text-sm font-medium hover:bg-yellow-600 transition-all">
                         Update Status
                       </button>
                     </div>
                   ) : (
                     <div className="flex space-x-2">
-                      <button className="bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-all">
+                      <button className="bg-blue-100 text-blue-700 px-1 py-1 rounded-lg text-sm font-medium hover:bg-blue-600 transition-all">
                         Print Receipt
                       </button>
-                      <span className="bg-gray-100 text-gray-600 px-4 py-2 rounded-lg text-sm font-medium">
+                      <span className="bg-gray-100 text-gray-700 px-1 py-1 rounded-lg text-sm font-medium">
                         Archived
                       </span>
                     </div>
                   )}
                 </div>
-                <div className="flex space-x-3 text-sm">
+                {/* <div className="flex space-x-3 text-sm">
                   <button className="text-blue-500 hover:text-blue-600 font-medium">
                     View Details
                   </button>
                   <button className="text-gray-500 hover:text-gray-700">
                     Edit Order
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

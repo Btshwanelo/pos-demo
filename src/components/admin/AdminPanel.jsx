@@ -73,25 +73,25 @@ export default function AdminPanel() {
               <nav className="space-y-2">
                 <div 
                   onClick={() => navigate('/pos')}
-                  className="flex items-center space-x-3 p-3 rounded-xl text-gray-600 hover:bg-gray-50 cursor-pointer transition-all"
+                  className="flex items-center space-x-3  p-3 text-gray-600 hover:bg-gray-50 cursor-pointer transition-all"
                 >
                   <span>Point of Sales</span>
                 </div>
-                <div className="flex items-center space-x-3 p-3 rounded-xl bg-blue-500 text-white cursor-pointer">
+                <div className="flex items-center space-x-3 p-3 bg-blue-500 text-white cursor-pointer">
                   <span className="font-medium">Activity</span>
                 </div>
-                <div className="flex items-center space-x-3 p-3 rounded-xl text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
+                <div className="flex items-center space-x-3 p-3 text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
                   <span>Report</span>
                 </div>
-                <div className="flex items-center space-x-3 p-3 rounded-xl text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
+                <div className="flex items-center space-x-3 p-3 text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
           
                   <span>Inventory</span>
                 </div>
-                <div className="flex items-center space-x-3 p-3 rounded-xl text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
+                <div className="flex items-center space-x-3 p-3 text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
               
                   <span>Teams</span>
                 </div>
-                <div className="flex items-center space-x-3 p-3 rounded-xl text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
+                <div className="flex items-center space-x-3 p-3 text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
                
                   <span>Settings</span>
                 </div>

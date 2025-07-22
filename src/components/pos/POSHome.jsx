@@ -68,23 +68,23 @@ export default function POSHome() {
               <nav className="space-y-2">
                 <div 
                   onClick={startNewSale}
-                  className="flex items-center space-x-3 p-3 rounded-xl bg-blue-500 text-white cursor-pointer hover:bg-blue-600 transition-all"
+                  className="flex items-center space-x-3 p-3  bg-blue-500 text-white cursor-pointer hover:bg-blue-600 transition-all"
                 >
                   <span className="font-medium">Point of Sales</span>
                 </div>
-                <div onClick={() => navigate('/admin')} className="flex items-center space-x-3 p-3 rounded-xl text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
+                <div onClick={() => navigate('/admin')} className="flex items-center space-x-3 p-3  text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
                   <span>Activity</span>
                 </div>
-                <div onClick={() => navigate('/admin')} className="flex items-center space-x-3 p-3 rounded-xl text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
+                <div onClick={() => navigate('/admin')} className="flex items-center space-x-3 p-3  text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
                   <span>Reports</span>
                 </div>
-                <div className="flex items-center space-x-3 p-3 rounded-xl text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
+                <div className="flex items-center space-x-3 p-3  text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
                   <span>Inventory</span>
                 </div>
-                <div className="flex items-center space-x-3 p-3 rounded-xl text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
+                <div className="flex items-center space-x-3 p-3  text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
                   <span>Staff</span>
                 </div>
-                <div className="flex items-center space-x-3 p-3 rounded-xl text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
+                <div className="flex items-center space-x-3 p-3  text-gray-600 hover:bg-gray-50 cursor-pointer transition-all">
                   <span>Settings</span>
                 </div>
               </nav>
@@ -94,38 +94,33 @@ export default function POSHome() {
           {/* Main Content Area */}
           <div className="col-span-9">
             <div className="bg-white rounded-2xl shadow-sm p-6">
-              <div className="text-center mb-12">
-                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                  <span className="text-white text-3xl">🏷️</span>
-                </div>
-                <h2 className="text-3xl font-semibold text-gray-800 mb-4">Welcome to Number Plate Services</h2>
-                <p className="text-lg text-gray-600 mb-8">Complete vehicle registration and number plate solutions</p>
-                
+              {/* <div className="text-center mb-12">
+
                 <button
                   onClick={startNewSale}
-                  className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-2xl font-medium text-lg transition-all shadow-lg hover:shadow-xl"
+                  className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-sm font-medium text-lg transition-all shadow-lg hover:shadow-xl"
                 >
-                  🛒 Start New Service
+                Start New Service
                 </button>
-              </div>
+              </div> */}
 
               {/* Quick Actions */}
-              <div className="mt-12 bg-gray-50 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">Quick Actions</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="mt-12 max-w-xl mx-auto  rounded-xl p-6">
+                {/* <h3 className="text-lg font-semibold text-gray-800 mb-4">Quick Actions</h3> */}
+                <div className="grid grid-cols-2  gap-4">
                   <button 
                     onClick={startNewSale}
-                    className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-md transition-all"
+                    className="flex flex-col items-center border border-gray-200 hover:border-blue-500 p-4 bg-white rounded-lg hover:shadow-md transition-all"
                   >
                     <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mb-2">
                       <span className="text-white text-sm">🏷️</span>
                     </div>
-                    <span className="text-sm font-medium text-gray-700">New Plate Order</span>
+                    <span className="text-sm font-medium text-gray-700">New Service</span>
                   </button>
 
                   <button 
                     onClick={startNewSale}
-                    className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-md transition-all"
+                    className="flex flex-col items-cente border border-gray-200 hover:border-blue-500 r p-4 bg-white rounded-lg hover:shadow-md transition-all"
                   >
                     <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mb-2">
                       <span className="text-white text-sm">⚡</span>
@@ -135,7 +130,7 @@ export default function POSHome() {
 
                   <button 
                     onClick={() => navigate('/admin')}
-                    className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-md transition-all"
+                    className="flex flex-col items-center border border-gray-200 hover:border-blue-500 p-4 bg-white rounded-lg hover:shadow-md transition-all"
                   >
                     <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mb-2">
                       <span className="text-white text-sm">📋</span>
@@ -145,7 +140,7 @@ export default function POSHome() {
 
                   <button 
                     onClick={() => navigate('/admin')}
-                    className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-md transition-all"
+                    className="flex flex-col items-center border border-gray-200 hover:border-blue-500 p-4 bg-white rounded-lg hover:shadow-md transition-all"
                   >
                     <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mb-2">
                       <span className="text-white text-sm">📈</span>
