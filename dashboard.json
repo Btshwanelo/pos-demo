@@ -1,0 +1,25 @@
+{
+  "entityName": "DebtorCompanyApplication",
+  "requestName": "CreateOrUpdateDocuments",
+  "RecordId": "b732b084-b319-459b-809b-5f14cb593bf5",
+  "inputParamters": {
+    "Documents": [
+      {
+        "DocLibId": null,
+        "DocumentType": 886,
+        "Name": "INV-006547 (1).pdf",
+        "FileExtension": ".pdf",
+        "VersionNumber": "1.0.0",
+        "FileContent": "data:application/pdf;base64,JVBERi0xLjQKJef"
+      },
+      {
+        "DocLibId": null,
+        "DocumentType": 1109,
+        "Name": "9409166388086 (4).pdf",
+        "FileExtension": ".pdf",
+        "VersionNumber": "1.0.0",
+        "FileContent": "data:application/pdf;base64,JVBERi0xLjQKJef"
+      }
+    ]
+  }
+}
